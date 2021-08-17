@@ -109,9 +109,6 @@ header address div {
     background: #fff;
     border: 1px solid #F5170E;
 }
-
-
-
 .hot-tours {
     margin-top: 246px;
     margin-bottom: 127px;
@@ -206,9 +203,6 @@ header address div {
     background: #fff;
     border: 1px solid #F5170E;
 }
-
-
-
 .news h2 {
     padding-top: 127px;
     padding-bottom: 51px;
@@ -262,10 +256,6 @@ header address div {
     color: #fff;
     padding-bottom: 48px; 
 }
-
-
-
-
 .pagination {
     display: flex;
     align-items: center;
@@ -300,8 +290,6 @@ header address div {
     color: #F5170E;
     border-radius: 50%;
 }
-
-
 .about::before {
     content: "";
     display: inline-block;
@@ -351,8 +339,6 @@ header address div {
     background: #fff;
     border: 1px solid #F5170E;
 }
-
-
 footer {
     display: flex;
     align-items: center;
@@ -401,5 +387,3 @@ footer address a {
     color: #fff;
     font-style: normal;
 }
-
-
