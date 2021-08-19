@@ -16,14 +16,13 @@ body {
     margin: 0;
     background-image: url(../assets/images/background.jpg);
     background-size: cover;
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-position: top;
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .container{
-    border: 1px solid pink;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -81,8 +80,7 @@ header address div {
     margin-bottom: 246px;
 }
 .content .author-tours h1 {
-    width: 510px;
-    height: 200px;
+    padding-bottom: 28px;
     max-width: 50%;
     font-weight: 700;
     font-size: 72px;
@@ -277,12 +275,10 @@ header address div {
 }
 .pagination li {
     display: inline-block;
-
 }
 .pagination li a {
     text-align: center;
-    width: 32px;
-    height: 32px;
+    padding: 5px 11px 6px 11px;
     margin-right: 24px;
     font-weight: 700;
     font-size: 16px;
