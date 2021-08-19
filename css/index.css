@@ -23,26 +23,28 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 .container{
+    border: 1px solid pink;
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 header {
-    height: 120px;
-    position: relative;
-    margin-bottom: 135px;
+    display: flex;
+    padding-bottom: 131px;
+    padding-top: 29px;
+}
+header div:nth-child(1) {
+    flex: 1;
+}
+header div:nth-child(2) {
+    flex: 4;
+}
+header div:nth-child(3) {
+    flex: 1;
 }
 header img {
     display: block;
-    position: absolute;
-    top: 29px;
-    left: 0;
     height: 36px;
     width: 85px;
-}
-header nav{
-    position: absolute;
-    top: 42px;
-    left: 164px;
 }
 header nav ul {
     margin: 0;
@@ -60,13 +62,10 @@ header nav a {
 }
 header address {
     text-align: right;
-    position: absolute;
-    top: 27px;
-    right: 0;
 }
 header address a {
-    font-weight: 400;
     margin-bottom: 2px;
+    font-weight: 400;
     font-size: 26px;
     color: #fff;
     font-style: normal;
@@ -77,6 +76,9 @@ header address div {
     color: #fff;
     font-style: normal;
     text-decoration: underline;
+}
+.content {
+    margin-bottom: 246px;
 }
 .content .author-tours h1 {
     width: 510px;
@@ -109,10 +111,6 @@ header address div {
     background: #fff;
     border: 1px solid #F5170E;
 }
-.hot-tours {
-    margin-top: 246px;
-    margin-bottom: 127px;
-}
 .hot-tours .title {
     display: flex;
     align-items: center;
@@ -125,6 +123,8 @@ header address div {
     padding-right: 12px;
 }
 .hot-tours ul {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
@@ -145,42 +145,42 @@ header address div {
     min-height: 144px;
     border-radius: 5px 5px 0 0;
 }
-.hot-tours .content {
+.hot-tours .card {
     padding: 33px 16px 26px 22px;
     background: #fff;
     border-radius: 0 0 5px 5px;
 }
-.hot-tours .content h3 {
+.hot-tours .card h3 {
     font-weight: 700;
     font-size: 24px;
     color: #000;
     margin-bottom: 21px;
 }
-.hot-tours .content .icons {
+.hot-tours .card .icons {
     display: flex;
     align-items: center;
 }
-.hot-tours .content .night {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 16px;
-    color: #666;
-}
-.hot-tours .content .breakfast {
+.hot-tours .card .night {
     display: flex;
     align-items: center;
     font-weight: 400;
     font-size: 16px;
     color: #666;
 }
-.hot-tours .content img {
+.hot-tours .card .breakfast {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+}
+.hot-tours .card img {
     margin-right: 10px;
 }
-.hot-tours .content p {
+.hot-tours .card p {
     margin-right: 28px;
 }
-.hot-tours .content .text {
+.hot-tours .card .text {
     margin-top: 34px;
     margin-bottom: 35px;
     font-weight: 400;
@@ -188,7 +188,7 @@ header address div {
     color: #303030;
     
 }
-.hot-tours .content a {
+.hot-tours .card a {
     font-weight: 700;
     font-size: 14px;
     color: #fff;
@@ -198,7 +198,7 @@ header address div {
     text-transform: uppercase;
     border: none;
 }
-.hot-tours .content a:hover {
+.hot-tours .card a:hover {
     color: #F5170E;
     background: #fff;
     border: 1px solid #F5170E;
@@ -210,9 +210,12 @@ header address div {
     font-size: 36px;
     color: #fff;
 }
+.news ul {
+    display: flex;
+    justify-content: space-between;
+}
 .news li {
     position: relative;
-    width: 557px;
     display: inline-block;
     vertical-align: top;
     border-radius: 5px;
@@ -306,7 +309,7 @@ header address div {
     background-repeat: no-repeat;
     height: 455px;
     width: 785px;  
-    margin-bottom: 53px;
+    margin-bottom: 102px;
     padding: 0 350px 0 81px;
     margin-top: 97px;
     margin-left: -47px;
@@ -342,14 +345,23 @@ header address div {
 footer {
     display: flex;
     align-items: center;
-    height: 146px;
+    margin-bottom: 65px;
+}
+footer div:nth-child(1) {
+    flex: 1;
+}
+footer div:nth-child(2) {
+    flex: 2;
+}
+footer div:nth-child(3) {
+    flex: 3;
+}
+footer div:nth-child(3) {
+    flex: 1;
 }
 footer img {
     height: 36px;
     width: 85px;
-}
-footer .menu ul {
-    margin-left: 79px;
 }
 footer .menu li {
     display: inline-block;
@@ -360,19 +372,13 @@ footer .menu li a {
     font-size: 14px;
     color: #fff;
 }
-footer nav ul {
-   margin-left: 190px;
-}
 footer nav li {
     display: inline-block;
-    margin-right: 10px;
 }
 footer .social {
+    margin-right: 10px;
     height: 36px;
     width: 36px;
-}
-footer address {
-    margin-left: 74px;
 }
 footer address div {
     font-weight: 400;
