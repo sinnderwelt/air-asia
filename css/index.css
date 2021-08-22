@@ -1,39 +1,9 @@
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-h1 {
-    font-weight: 700;
-    font-size: 72px;
-}
-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 1px;
-}
-h3 {
-    font-weight: 700;
-    font-size: 24px;
-}
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-a {
-    text-decoration: none;
-}
 body {
-    padding: 0;
-    margin: 0;
     background-image: url(../assets/images/background.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top;
     font-family: 'Open Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 .container{
     margin: 0 auto;
@@ -70,6 +40,9 @@ header nav a {
     font-size: 14px;
     color: #fff;
 }
+header nav a:hover {
+    color: #DA0100;
+}
 header address {
     text-align: right;
 }
@@ -83,7 +56,7 @@ header address a {
 header address div {
     font-weight: 400;
     font-size: 13px;
-    color: #fff;
+    color:  #98A4A8;
     font-style: normal;
     text-decoration: underline;
 }
@@ -116,9 +89,9 @@ header address div {
     border: none;
 }
 .content .author-tours a:hover {
-    color: #F5170E;
-    background: #fff;
-    border: 1px solid #F5170E;
+    color: #fffE;
+    background: #DA0100;
+    border: none;
 }
 .hot-tours .title {
     display: flex;
@@ -275,7 +248,7 @@ header address div {
 }
 .pagination li a {
     text-align: center;
-    padding: 5px 10px 6px 11px;
+    padding: 5px 13px 6px 11px;
     font-weight: 700;
     font-size: 16px;
     color: #fff;
@@ -333,22 +306,26 @@ header address div {
     background: #fff;
     border: 1px solid #F5170E;
 }
+.footer-edge {
+    background: #001821;
+}
 footer {
     display: flex;
     align-items: center;
-    margin-bottom: 65px;
+    padding-top: 48px;
+    padding-bottom: 42px;
 }
 footer div:nth-child(1) {
     flex: 1;
 }
 footer div:nth-child(2) {
-    flex: 4;
-}
-footer div:nth-child(3) {
-    flex: 5;
-}
-footer div:nth-child(3) {
     flex: 2;
+}
+footer div:nth-child(3) {
+    flex: 3;
+}
+footer div:nth-child(3) {
+    flex: 1;
 }
 footer img {
     height: 36px;
@@ -356,19 +333,21 @@ footer img {
 }
 footer .menu li {
     display: inline-block;
-    margin-right: 30px;
-    margin-left: 20px;
+    margin-right: 54px;
 }
 footer .menu li a {
     font-weight: 400;
     font-size: 14px;
     color: #fff;
 }
+footer .menu li a:hover {
+    color: #DA0100;
+}
 footer nav li {
     display: inline-block;
 }
 footer .social {
-    margin-left: 13px;
+    margin-right: 10px;
     height: 36px;
     width: 36px;
 }
