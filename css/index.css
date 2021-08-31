@@ -44,6 +44,8 @@ header nav a:hover {
     color: #DA0100;
 }
 header address {
+    display: flex;
+    flex-direction: column;
     text-align: right;
 }
 header address a {
@@ -53,12 +55,67 @@ header address a {
     color: #fff;
     font-style: normal;
 }
-header address div {
+header .main {
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+header address .main a {
     font-weight: 400;
     font-size: 13px;
     color:  #98A4A8;
     font-style: normal;
     text-decoration: underline;
+}
+header .main:hover .dropdown {
+    left: 125px;
+    opacity: 1;
+}
+header .main .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #EDEDED;
+    width: 160px;
+    height: 80px;
+    top: 30%;
+    margin-top: 20px; 
+    left: -9999px;
+    opacity: 0;
+    transition: opacity .4s;
+    border-radius: 4px;
+}
+header .main .dropdown::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 33px;
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 15px solid #EDEDED;
+}
+header .main .dropdown::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -29px; 
+    height: 30px; 
+}
+header .main .dropdown li {
+    display: flex;
+    font-weight: 600;
+    font-size: 13px;
+    color:  #1E1F20;
+    font-style: normal
+}
+header .main .dropdown span {
+    font-weight: 600;
 }
 .content {
     margin-bottom: 265px;
@@ -306,6 +363,14 @@ header address div {
     background: #fff;
     border: 1px solid #F5170E;
 }
+.footer-line::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    opacity: .1;
+}
 .footer-edge {
     background: #001821;
 }
@@ -346,10 +411,68 @@ footer .menu li a:hover {
 footer nav li {
     display: inline-block;
 }
-footer .social {
-    margin-right: 10px;
-    height: 36px;
+footer .icon {
     width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+footer .icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    transition: .3s;
+}
+footer .icon:hover:after {
+    opacity: 0;
+}
+footer .telegram:after {
+    background: url('../assets/images/sprites.png')  -122px -66px;
+}
+footer .vk:after {
+    background: url('../assets/images/sprites.png')  -10px -122px;
+}
+footer .facebook:after {
+    background: url('../assets/images/sprites.png')  -10px -10px;
+}
+footer .instagram:after {
+    background: url('../assets/images/sprites.png')  -10px -66px;
+}
+footer .icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s;
+}
+footer .icon:hover:before {
+    opacity: 1;
+}
+footer .telegram:before {
+    background: url('../assets/images/sprites.png')  -122px -10px;
+}
+footer .vk:before {
+    background: url('../assets/images/sprites.png')  -66px -122px;
+}
+footer .facebook:before {
+    background: url('../assets/images/sprites.png')  -66px -10px;
+}
+footer .instagram:before {
+    background: url('../assets/images/sprites.png')  -66px -66px;
 }
 footer address div {
     font-weight: 400;

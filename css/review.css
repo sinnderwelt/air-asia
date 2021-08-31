@@ -126,121 +126,100 @@ header .main .dropdown li {
 header .main .dropdown span {
     font-weight: 600;
 }
-.content .service h1 {
-    padding-bottom: 90px;
+.content .review h1 {
+    margin-bottom: 120px;
     font-weight: 700;   
     font-size: 72px;
     color: #fff;
     letter-spacing: 2px;
 }
-.content .service div {
+.content .review div {
     display: flex;
     align-items: center;
     color: #9a9a9a;
     padding-bottom: 24px;
 }
-.content .service a {
+.content .review a {
     font-weight: 700;
     font-size: 14px;
     color: #9a9a9a;
     text-decoration: underline;
 }
-.content .service p::before {
+.content .review p::before {
     content: "\00a0 ";
 }
-.content .service p::after {
+.content .review p::after {
     content: "\00a0 ";
 }
-.waterfall-edge {
+.main-edge {
     background: #f2f2f2;
 }
-.waterfall {
-    display: flex;
+.main-edge .main {
     padding-top: 98px;
+    column-count: 2;
+    column-gap: 30px;
 }
-.waterfall div:nth-child(1) {
-    flex: 1;
-}
-.waterfall div:nth-child(2) {
-    display: flex;
+.main-edge .main .people-review {
+    display: inline-flex;
     flex-direction: column;
-    flex: 2;
-    padding-left: 56px;
-    padding-right: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background: #f4f5f5;
+    padding: 50px 31px 33px 28px;
+    max-width: 557px;
 }
-.waterfall h2 {
+.main-edge .main .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.main-edge .main .card-header img {
+    height: 142px;
+    width: 142px;
+    margin-right: 22px;
+}
+.main-edge .main .card-header .title {
+    display: flex;
+    margin-bottom: 12px;
+}
+.main-edge .main .card-header .name {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     color: #000;
-    margin-top: 15px;
+    margin-right: 7px;
 }
-.waterfall p {
+.main-edge .main .card-header .name:hover {
+    color: #2e77a4;
+    text-decoration: underline;
+}
+.main-edge .main .card-header .logo-link img {
+    height: 30px;
+    width: 30px;
+}
+.main-edge .main .card-header .btn {
+    font-weight: 400;
+    font-size: 13px;
+    color: #303030;
+    padding: 9px 17px 10px 18px;
+    background: #b9eae4;
+    border-radius: 35px;
+}
+.main-edge .main .card h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #1a1b1e;
+    margin-bottom: 13px;
+}
+.main-edge .main .card article {
     font-weight: 400;
     font-size: 16px;
-    line-height: 27px;
-    color: #303030;
-    margin: 0;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    color: #818181;
+    margin-bottom: 49px;
 }
-.waterfall a {  
-    font-weight: 700;
+.main-edge .main .card p {
+    font-weight: 600;
     font-size: 14px;
-    color: #fff;
-    background: #F5170E;
-    border-radius: 35px;
-    padding: 18px 40px;
-    text-transform: uppercase;
-    border: none;
-}
-.waterfall a:hover {
-    color: #F5170E;
-    background: #fff;
-    border: 1px solid #F5170E;
-}
-.island {
-    display: flex;
-    padding-top: 45px;
-}
-.island div:nth-child(1) {
-    flex: 1;
-}
-.island div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    padding-left: 56px;
-    padding-right: 20px;
-}
-.island h2 {
-    font-weight: 700;
-    font-size: 36px;
-    color: #000;
-    margin-top: 15px;
-}
-.island p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
-    color: #303030;
-    margin: 0;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-.island a {
-    font-weight: 700;
-    font-size: 14px;
-    color: #fff;
-    background: #F5170E;
-    border-radius: 35px;
-    padding: 18px 40px;
-    text-transform: uppercase;
-    border: none;
-}
-.island a:hover {
-    color: #F5170E;
-    background: #fff;
-    border: 1px solid #F5170E;
+    color: #1a1b1e;
 }
 .pagination-edge {
     background: #f2f2f2;
@@ -276,32 +255,112 @@ header .main .dropdown span {
     color: #fff;
     border-radius: 50%;
 }
-.partners-edge {
-    background: #f4f5f5;
+.background-tour {
+    background-image: url(../assets/images/backgroundtour.png);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
 }
-.partners h2 {
-    font-weight: 700;
-    font-size: 48px;
-    color: #000;
-    padding-bottom: 99px;
-    padding-top: 88px;
-}
-.partners .campany div {
+.background-tour .tour {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-.partners .campany div div {
+.background-tour .tour h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+.background-tour .tour img {
     display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    filter: grayscale(100%);
+    margin-top: 27px;
 }
-.partners .campany div div:hover{
-    filter: grayscale(0%);
+.review-edge {
+    background: #f4f5f5;
 }
-.partners .campany div a{
-    padding-bottom: 99px;
+.review h2 {
+    padding-top: 62px;
+    padding-bottom: 57px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1b1e;
+}
+.review form div {
+    display: flex;
+}
+.review form div .form-row {
+    flex: 1;
+    margin-right: 28px;
+    margin-bottom: 26px;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    padding: 20px 0 20px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1a1b1e;
+}
+.review form div .form-row:last-child {
+    margin-right: 0;
+}
+.review form div .form-row::placeholder{
+    color: #666;
+}
+.review form textarea {
+    height: 235px;
+}
+.review .form-controls p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1a1b1e;
+    min-width: 450px;
+}
+.review .form-controls ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.review .form-controls li {
+    display: flex;
+    margin-right: 7px;
+    margin-bottom: 9px;
+}
+.review .form-controls li label {
+    cursor: pointer;
+}
+.review .form-controls li label input {
+    display: none;
+}
+.review .form-controls li label input:checked ~ .control-tag {
+    background: #b9eae4; 
+}
+.review .form-controls .btn {
+    font-weight: 400;
+    font-size: 13px;
+    color: #303030;
+    padding: 9px 14px 10px 18px;
+    background: #e7e7e7;
+    border-radius: 35px;
+}
+.review .form-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 96px;
+}
+.review .form-btn button {
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 17px;
+    color: #fff;
+    background: #F5170E;
+    border-radius: 35px;
+    padding: 18px 40px;
+    text-transform: uppercase;
+    border: none;
+}
+.review .form-btn .clear {
+    background: #2B2B2B;
+}
+.review .form-btn .clear:hover {
+    background: #8E8E8E;
 }
 .footer-edge {
     background: #001821;
@@ -351,10 +410,7 @@ footer .icon {
     position: relative;
     margin-right: 10px;
     cursor: pointer;
-    z-index: 0;
 }
-
-
 footer .icon:after {
     content: '';
     display: block;
