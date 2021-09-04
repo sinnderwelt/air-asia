@@ -292,12 +292,16 @@ header .main .dropdown span {
     margin-right: 28px;
     margin-bottom: 26px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid transparent;
     background: #fff;
     padding: 20px 0 20px 30px;
     font-size: 18px;
     font-weight: 400;
     color: #1a1b1e;
+    outline: none;
+}
+.review form div .form-row:focus {
+    border-color: #F5170E;
 }
 .review form div .form-row:last-child {
     margin-right: 0;
